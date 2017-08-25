@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8"/>
+		<title>Tomorrowland</title>
+		<link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="main.css"/>
+	
+	</head>
+	<body>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 /3</div>
+				<img src="i3.jpg" width="100%" height="400px"/>
+				<div class="text">WATCH VIDEOS</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">2 /3</div>
+				<img src="i1.jpg" width="100%" height="400px"/>
+				<div class="text">GALLERY</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">3 /3</div>
+				<img src="j1.jpg" width="100%" height="400px"/>
+				<div class="text">EXPERIENCE THE WORLD</div>
+			</div>
+			 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			
+			<script>
+									var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+							  slides[i].style.display = "none";
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							  dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";
+						  dots[slideIndex-1].className += " active";
+						} 
+
+		</script>
+		
+		
+		
+		<div class="qa">
+			<img src="icon.jpg" alt="icon" class="icon"/>
+			<ul>
+				<li><a href="">TOMORROWLAND</a></li>
+				<li><a href="">TASTES</a></li>
+				<li><a href="">UNIT WITH TOMORROWLAND</a></li>
+				<li><a href="">365</a></li>
+				<li><a href="">STORE</a></li>
+				<li><a href="">PEOPLE OF TOMORROW</a></li>
+			</ul>
+		</div>
+		<div class="look">
+			<div>
+				<img src="i2.jpg" alt="info" class="i2"/>
+			</div>
+				<div class="blank"></div>
+			<div class="content1">
+				<P>SET TIMES NOW AVAILABLE</p><br/>
+				<p><h1 style="color:rgb(216,15,100)">Tomorrowland 2017 set times</h1></p><br/>
+				<p>All set times for Tomorrowland 2017 are now available. Prepare for a wonderful new tale and musical adventure…</p><br/><br/>
+				<p>
+					<button type="button" class="button">SET TIMES</button>
+					<button type="button" class="button">WATCH TRAILER</button>
+				</p>
+			</div>
+		</div>
+		<div class="block">
+			<div class="glry1">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			<div class="glry2">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			<div class="glry3">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			<div class="glry4">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			<div class="glry5">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			<div class="glry6">
+				
+				<div class="content2">
+					<p>UPGRADE YOUR TOMORROWLAND EXPERIENCE</p><br/>
+					<p style="font-size:25px">Vouchers are now available</p>
+				</div>
+			</div>
+			
+			<div class="tq">
+				<ul>
+					<li><a href="#" class="fa fa-facebook">Facebook</a></li>
+					<li><a href="#" class="fa fa-instagram">Instagram</a></li>
+					<li><a href="#" class="fa fa-twitter">Twitter</a></li>
+				 </ul>
+			</div>
+			<div class="sub">
+				<form class="subscribe">
+					<input type="email" name="email" placeholder="entre your email" size="20"/>
+					<button type="button" class="sb">Subscribe</button>
+				</form>
+			</div>
+		</div>
+		<!--<div class="end">
+			 
+				
+					<div class="b">photos</div>
+					<div class="b">videos</div>
+					<div class="b">featured</div>	
+							<div class="a">
+							<img src="i3.jpg" width="350px" height="390px">
+								<div class="overlay">
+								<div class="text">Gallery</div>
+								</div>
+							</div>
+					<div class="qn">
+						<button class="tablink" onclick="openlink('new')" id="defaultopen">New</button>
+						<button class="tablink" onclick="openlink('popular')">Popular</button>
+						<div id="new" class="tabcontent">
+							<h3>watch new videos</h3>
+						</div>
+						<div id="popular" class="tabcontent">
+							<h3>watch popular vidos here</h3>
+						</div>
+
+					</div>
+		</div>-->
+	</body>
+</html>
